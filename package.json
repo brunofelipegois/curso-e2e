@@ -1,0 +1,25 @@
+{
+  "name": "testes-e2e-com-cypress",
+  "version": "1.0.0",
+  "description": "TBD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "cy : open": "cypress open",
+    "cy : open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "test :": "cypress run",
+    "test : mobile": "cypress run --config viewportWidth=410 viewportHeight=860",
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix": "eslint cypress/**/*.js --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.2.0",
+    "cypress-mailosaur": "^2.3.3",
+    "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "faker": "^5.5.3"
+  }
+}
